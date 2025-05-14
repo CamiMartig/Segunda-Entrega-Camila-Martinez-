@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat"; 
+}
+
+/*header*/
+header{
+    background-color: #FDB7EA;
+}
+h1{
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+}
+li{ 
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    border: 20px;
+}
+
+/*INDEX*/
+.mainindex{
+    background-color: #FDB7EA;
+}
+.textomain{
+    font-size: small;
+    text-align: center;
+}
+.textomain h2{
+    font-weight: normal;
+}
+.textomain h3{
+    font-weight: normal;
+}
+.claseProductos{
+    display: flex;
+    justify-content: space-around;
+    height: 400px; 
+}
+.claseProductos img{
+    margin-top: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #c57eb2;    
+}
+
+/*Paginas Productos*/
+.paginatortas{
+    background-color:#FBF3B9 ;
+}
+.paginacookies{
+    background-color: #B7B1F2;
+}
+.paginacupcakes{
+    background-color: #FFDCCC;
+}
+
+/*Pagina Sobre Mi*/
+.sobremi{
+    background-color:#FBF3B9 ;
+    text-align: left; 
+   }
+section{
+    background-color:#FDB7EA;
+}
+section img{
+    height: 350px;
+}
+
+/*Pagina Contacto*/
+.paginacontacto{
+    height: 600px;
+    background-color: #B7B1F2 ;
+    background-image: url(../images/productos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.paginacontacto h2{
+    font-weight: normal;
+}
+
+/*footer*/
+footer{
+    background-color: #FDB7EA;
+    text-align: center;
+}
+footer h3{
+    font-size: medium;
+    font-weight: normal;
+}
+.flexfooter{
+    display: flex;
+    align-items: start;
+}
