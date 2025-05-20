@@ -5,15 +5,21 @@
     font-family: "Montserrat"; 
 }
 
-/*header*/
+/*HEADER*/
 header{
-    background-color: #FDB7EA;
+    background-color: #f0cffa;
 }
-h1{
-    text-align: center;
-    font-weight: 100;
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
     font-style: italic;
+    font-weight: 100;
 }
+/*MENU*/
 li{ 
     list-style: none;
 }
@@ -24,15 +30,22 @@ li a{
 .menu{
     display: flex;
     justify-content: space-around;
-}
-.menu li{
-    border: 20px;
+    border: solid;
+    border-color: #ecc7f8;
 }
 
 /*INDEX*/
 .mainindex{
-    background-color: #FDB7EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 650px;
+    background-image: url(../images/CakeCupcake);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .textomain{
     font-size: small;
     text-align: center;
@@ -42,17 +55,6 @@ li a{
 }
 .textomain h3{
     font-weight: normal;
-}
-.claseProductos{
-    display: flex;
-    justify-content: space-around;
-    height: 400px; 
-}
-.claseProductos img{
-    margin-top: 50px;
-    border-radius: 50px;
-    border-style: solid;
-    border-color: #c57eb2;    
 }
 
 /*Paginas Productos*/
@@ -66,7 +68,17 @@ li a{
     background-color: #FFDCCC;
 }
 
-/*Pagina Sobre Mi*/
+.claseProductos{
+    display: flex;
+    justify-content: space-around;
+    height: 400px; 
+}
+.claseProductos img{
+    margin-top: 50px; 
+    border-radius: 50px; 
+}
+
+/*Pagina Sobre Mi
 .sobremi{
     background-color:#FBF3B9 ;
     text-align: left; 
@@ -77,6 +89,7 @@ section{
 section img{
     height: 350px;
 }
+*/
 
 /*Pagina Contacto*/
 .paginacontacto{
@@ -92,15 +105,24 @@ section img{
 }
 
 /*footer*/
-footer{
-    background-color: #FDB7EA;
-    text-align: center;
+.flexfooter{
+    display: flex;
+    background-color: #f0cffa;
+    justify-content: center;
+    height: 40px;
 }
-footer h3{
+
+.diseñofooter{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px;    
+}
+.diseñofooter a{
+    margin: 5px;
+}
+.diseñofooter h3{
     font-size: medium;
     font-weight: normal;
 }
-.flexfooter{
-    display: flex;
-    align-items: start;
-}
+
