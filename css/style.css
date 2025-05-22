@@ -20,6 +20,9 @@ header{
     font-weight: 100;
 }
 /*MENU*/
+ul{
+    margin-bottom: 0px;
+}
 li{ 
     list-style: none;
 }
@@ -33,7 +36,9 @@ li a{
     border: solid;
     border-color: #ecc7f8;
 }
-
+.bg-dark{
+    background-color: #bd74c7;
+}
 /*INDEX*/
 .mainindex{
     display: flex;
@@ -57,7 +62,6 @@ li a{
     font-weight: normal;
 }
 
-
 /*Paginas Productos*/
 /*GRID PRODUCTOS*/
 .contenedor-grid{
@@ -69,9 +73,8 @@ li a{
     grid-template-columns: repeat(3, 20%);
     grid-template-rows: 30px repeat(2, 450px);
     
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    column-gap: 50px;
 }
 
 .texto-cookies-torta-cupcake{
@@ -134,38 +137,77 @@ li a{
 
 /*Pagina Sobre Mi*/
 .sobremi{
-    background-color: #f0cffa;
-    text-align: left; 
-    display: flex;  
-    height: 550px;
+    background-color: #f0cffa; 
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
+.sobremidiseño{
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    border-radius: 30px;
+}
+.sobremidiseño img{
+    height: 500px;
+    margin-top: 30px;
+    background-color: #e8b6f7;
+    border-radius: 30px;   
+}
 
 /*Pagina Contacto*/
 .paginacontacto{
     height: 600px;
     background-color: #B7B1F2 ;
-    background-image: url(../images/productos.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+    padding: 2%;
+    display: flex;
+    gap: 100px;
 }
 .paginacontacto h2{
     font-weight: normal;
 }
-
+.formulario{    
+    padding: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.formulario button{
+    justify-items: center;
+}
+.formulario label {
+    display: block;
+    margin-top: 10px;
+}
+.fotocontacto{
+    width: 800px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 50px;
+}
 /*footer*/
 .flexfooter{
     display: flex;
     background-color: #f0cffa;
     justify-content: center;
+    height: 70px; 
+    border: solid;
+    border-color: #ecc7f8;
 }
 
 .diseñofooter{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin: 10px;    
+    margin: 10px; 
 }
 .diseñofooter a{
     margin: 5px;
@@ -174,4 +216,66 @@ li a{
     font-size: medium;
     font-weight: normal;
 }
+
+/*MEDIA QUERY*/
+/*INDEX*/
+@media (max-width: 600px){
+    .menu-hamburguesa{
+        visibility: visible;
+
+    }
+    .navbar-toggler{
+        align-items: center;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media (min-width: 600px){
+    .menu-hamburguesa{
+        display: none;
+    }
+    .menu{
+        visibility: visible;
+    }
+}
+@media (min-width: 900px) and (max-width: 1240px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: 
+        "texto-cookies-torta-cupcake"
+        "cookies1-tortaferrero-cupcakefruta cookies2-tortapeanut-cupcakemargarita"
+        "cookies3-tortafrutilla-cupcakeperlas cookies4-tortaferrero1-cupcakeunicornio" 
+        "cookies5-tortapeanut1-cupcakeverdes cookies6-tortafrutilla1-cupcakechoco";
+
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .texto-cookies-torta-cupcake{
+            visibility: hidden;
+        }
+    }
+
+@media (max-width: 1240px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: 
+        "texto-cookies-torta-cupcake"
+        "cookies1-tortaferrero-cupcakefruta"
+        "cookies2-tortapeanut-cupcakemargarita"
+        "cookies3-tortafrutilla-cupcakeperlas"
+        "cookies4-tortaferrero1-cupcakeunicornio" 
+        "cookies5-tortapeanut1-cupcakeverdes" 
+        "cookies6-tortafrutilla1-cupcakechoco";
+
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .texto-cookies-torta-cupcake{
+            visibility: hidden;
+        }
+    }
 
