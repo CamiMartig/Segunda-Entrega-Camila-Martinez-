@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Sobre Mi</title>
 </head>
 <body>
     <header>
         <!--logo-->
-        <a href="../index.html"><img src="../images/donca.jpg" alt="logo wonka's bakery" height="80px"></a> 
-        <h1>Donca Pasteleria</h1> 
+        <div class="logo">
+            <a href="../index.html"><img src="../images/donca.jpg" alt="logo wonka's bakery" height="80px"></a>  
+            <h1>Donca Pasteleria</h1> 
+        </div>
         <!--navegador-->
         <nav> 
-            <ul>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./tortas.html">Tortas</a></li>
                 <li><a href="./cookies.html">Cookies</a></li>
                 <li><a href="./cupcakes.html">Cupcakes</a></li>
-                <li><a href="./sobremi.html">Sobre Mi</a></li>
+                <li><a href="#">Sobre Mi</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="menu-hamburguesa">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <h5 class="text-body-emphasis h4">Inicio</h5>
+                    <h5 class="text-body-emphasis h4">Tortas</h5>
+                    <h5 class="text-body-emphasis h4">Cookies</h5>
+                    <h5 class="text-body-emphasis h4">Cupcakes</h5>
+                    <h5 class="text-body-emphasis h4">Sobre Mi</h5>
+                    <h5 class="text-body-emphasis h4">Contacto</h5>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="sobremi"> 
-            <p>¡Hola! Soy Agus, bioquímica de profesión, pero pastelera creativa de corazón.
-                Durante la pandemia descubrí mi pasión por la pastelería, y lo que empezó como un hobbie se convirtió en mi forma de expresar arte y dulzura al mundo. Así fue como me uní al emprendimiento de pastelería de mi mejor amiga: Dulce encuentro. Hoy doy el primer paso en este nuevo camino dedicado específicamente a pastelería creativa temática.                
-                ¡Te invito a seguirme y descubrir un mundo donde la pastelería, el arte y la creatividad se encuentran en cada bocado!</p>
-        </section>
-        <section>
-            <img src="../images/sobremi.jpg" alt="persona decorando una torta">        
+        <section class="sobremi">
+            <div class="sobremidiseño">
+                <p>¡Hola! Soy Agus, bioquímica de profesión, pero pastelera creativa de corazón.
+                Durante la pandemia descubrí mi pasión por la pastelería, y lo que empezó como un hobbie se convirtió en mi forma de expresar arte y dulzura al mundo. Así fue como me uní al emprendimiento de pastelería de mi mejor amiga: Dulce encuentro.</p>
+                <br>
+                <p>Hoy doy el primer paso en este nuevo camino dedicado específicamente a pastelería creativa temática.</p>
+                <br>
+                <p>¡Te invito a seguirme y descubrir un mundo donde la pastelería, el arte y la creatividad se encuentran en cada bocado!</p>
+            </div>
+            <div class="sobremidiseño">
+                <img src="../images/sobremi.jpg" alt="persona decorando una torta">        
+            </div>
         </section>
     </main>
     <!--footer-->
-    <footer>
-        <h3>Seguinos en Nuestras Redes</h3>
-        <a href="https://www.instagram.com/donca.pasteleria/" target="_blank"><img src="../images/instagram.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
-        <a href="https://api.whatsapp.com/send/?phone=541131530537&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/whatsapp.png" alt="logo de Whatsapp, lleva a enviar mensaje" height="20px"></a>
-        <a href="./contacto.html" target="_blank"><img src="../images/email.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
+    <footer class="flexfooter">
+        <div class="diseñofooter">
+            <h3>Contactanos por Nuestras Redes</h3>
+        </div>
+        <div class="diseñofooter">
+            <a href="https://www.instagram.com/donca.pasteleria/" target="_blank"><img src="../images/instagram.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
+            <a href="https://api.whatsapp.com/send/?phone=541131530537&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/whatsapp.png" alt="logo de Whatsapp, lleva a enviar mensaje" height="20px"></a>
+            <a href="./contacto.html" target="_blank"><img src="../images/email.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
+        </div>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

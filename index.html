@@ -7,18 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Donca Pasteleria</title>
 </head>
 <body>
     <header>
         <!--logo-->
-        <a href="./index.html"><img src="./images/donca.jpg" alt="logo wonka's bakery" height="80px"></a> 
-        <h1>Donca Pasteleria</h1> 
+        <div class="logo">
+            <a href="./index.html"><img src="./images/donca.jpg" alt="logo wonka's bakery" height="80px"></a> 
+            <h1>Donca Pasteleria</h1> 
+        </div>
         <!--navegador-->
         <nav> 
             <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="./pages/tortas.html">Tortas</a></li>
                 <li><a href="./pages/cookies.html">Cookies</a></li>
                 <li><a href="./pages/cupcakes.html">Cupcakes</a></li>
@@ -26,27 +29,46 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="menu-hamburguesa">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <h5 class="text-body-emphasis h4">Inicio</h5>
+                    <h5 class="text-body-emphasis h4">Tortas</h5>
+                    <h5 class="text-body-emphasis h4">Cookies</h5>
+                    <h5 class="text-body-emphasis h4">Cupcakes</h5>
+                    <h5 class="text-body-emphasis h4">Sobre Mi</h5>
+                    <h5 class="text-body-emphasis h4">Contacto</h5>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>    
     </header>
+
     <!--MAIN-->
-    <main>
-        <section class="mainindex textomain"> 
-            <h2>Tortas decoradas, Cookies y Cupcakes</h2>
+    <main class="mainindex">
+        <section class="textomain"> 
+            <h2>Tortas Decoradas, Cookies y Cupcakes</h2>
             <h3>Elegi los productos que mas te gusten</h3>
         </section>
-        <section class="claseProductos"> 
-            <img src="./images/cookies.png" alt="galletitas">
-            <img src="./images/mariocake1.png" alt="torta mario">
-            <img src="./images/cupckaes.png" alt="cupcakes halloween">            
-        </section>
     </main>
+    
     <!--footer-->
-    <div>
-        <footer class="flexfooter">
-            <h3>Seguinos en Nuestras Redes</h3>
+    <footer class="flexfooter">
+        <div class="diseñofooter">
+            <h3>Contactanos por Nuestras Redes</h3>
+        </div>
+        <div class="diseñofooter">
             <a href="https://www.instagram.com/donca.pasteleria/" target="_blank"><img src="./images/instagram.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
             <a href="https://api.whatsapp.com/send/?phone=541131530537&text&type=phone_number&app_absent=0" target="_blank"><img src="./images/whatsapp.png" alt="logo de Whatsapp, lleva a enviar mensaje" height="20px"></a>
             <a href="./pages/contacto.html" target="_blank"><img src="./images/email.png" alt="logo de instagram, lleva a cuenta de instagram" height="20px"></a>
-        </footer>
-    </div>
+        </div>    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
