@@ -39,11 +39,11 @@ li a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 650px;
-    background-image: url(../images/CakeCupcake);
+    background-image: url(../images/CakeCupcake.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 700px;
 }
 
 .textomain{
@@ -57,39 +57,89 @@ li a{
     font-weight: normal;
 }
 
+
 /*Paginas Productos*/
-.paginatortas{
-    background-color:#FBF3B9 ;
+/*GRID PRODUCTOS*/
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "texto-cookies-torta-cupcake texto-cookies-torta-cupcake texto-cookies-torta-cupcake"
+    "cookies1-tortaferrero-cupcakefruta cookies2-tortapeanut-cupcakemargarita cookies3-tortafrutilla-cupcakeperlas"
+    "cookies4-tortaferrero1-cupcakeunicornio cookies5-tortapeanut1-cupcakeverdes cookies6-tortafrutilla1-cupcakechoco";
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: 30px repeat(2, 450px);
+    
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
 }
+
+.texto-cookies-torta-cupcake{
+    grid-area: texto-cookies-torta-cupcake;
+    margin-top: 50px;   
+}
+
+.cookies1-tortaferrero-cupcakefruta{
+    grid-area: cookies1-tortaferrero-cupcakefruta;
+    width: 300px;
+}
+.cookies2-tortapeanut-cupcakemargarita{
+    grid-area: cookies2-tortapeanut-cupcakemargarita;
+    width: 300px;
+}
+.cookies3-tortafrutilla-cupcakeperlas{
+    grid-area: cookies3-tortafrutilla-cupcakeperlas;
+    width: 300px;
+}
+.cookies4-tortaferrero1-cupcakeunicornio{
+    grid-area: cookies4-tortaferrero1-cupcakeunicornio;
+    width: 300px;
+}
+.cookies5-tortapeanut1-cupcakeverdes{
+    grid-area: cookies5-tortapeanut1-cupcakeverdes;
+    width: 300px;
+}
+.cookies6-tortafrutilla1-cupcakechoco{
+    grid-area: cookies6-tortafrutilla1-cupcakechoco;
+    width: 300px;
+}
+
+/*COOKIES*/
 .paginacookies{
-    background-color: #B7B1F2;
+    background-color: #FBF3B9;
 }
+.paginacookies img{
+    border: solid;
+    border-color: #f6e98c;
+    border-radius: 30px;
+}
+/*TORTAS*/
+.paginatortas{
+    background-color:#a8a0f3 ;
+}
+.paginatortas img{
+    border: solid;
+    border-color: #978df2;
+    border-radius: 30px;
+}
+/*CUPCAKES*/
 .paginacupcakes{
-    background-color: #FFDCCC;
+    background-color: #f9c1a7;
+}
+.paginacupcakes img{
+    border: solid;
+    border-color: #f8b89a;
+    border-radius: 30px;
 }
 
-.claseProductos{
-    display: flex;
-    justify-content: space-around;
-    height: 400px; 
-}
-.claseProductos img{
-    margin-top: 50px; 
-    border-radius: 50px; 
-}
-
-/*Pagina Sobre Mi
+/*Pagina Sobre Mi*/
 .sobremi{
-    background-color:#FBF3B9 ;
+    background-color: #f0cffa;
     text-align: left; 
-   }
-section{
-    background-color:#FDB7EA;
+    display: flex;  
+    height: 550px;
 }
-section img{
-    height: 350px;
-}
-*/
+
 
 /*Pagina Contacto*/
 .paginacontacto{
@@ -109,7 +159,6 @@ section img{
     display: flex;
     background-color: #f0cffa;
     justify-content: center;
-    height: 40px;
 }
 
 .diseñofooter{
